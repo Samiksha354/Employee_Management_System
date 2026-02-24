@@ -1,0 +1,22 @@
+CREATE DATABASE IF NOT EXISTS employeemanagement;
+USE employeemanagement;
+
+CREATE TABLE employee (
+    name VARCHAR(100),
+    fname VARCHAR(100),
+    dob DATE,
+    salary VARCHAR(20),
+    address VARCHAR(200),
+    phone VARCHAR(15),
+    email VARCHAR(100),
+    education VARCHAR(50),
+    designation VARCHAR(100),
+    aadhar VARCHAR(20),
+    empID VARCHAR(20) PRIMARY KEY
+);
+
+CREATE TABLE login (
+    username VARCHAR(50) PRIMARY KEY,
+    password VARCHAR(50)
+);
+
